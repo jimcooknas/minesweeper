@@ -1,0 +1,129 @@
+/*Extended by Cooknas: http://www.cooknas.com/codingtrain/minesweeper/index.html*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+table, th, td {
+    border: none solid black;
+    border-collapse: collapse;
+    min-width:240px;
+}
+
+tr {
+    border-radius:0px 8px 8px 0px;
+}
+td.info {
+    background-color:antiquewhite;
+    text-align: center;
+}
+
+i {
+    font-family: 'FontAwesome';
+    font-size:18px;
+}
+
+#container{
+    display: flex;
+    position:absolute;
+    padding:8px;
+    top:0px;
+    left:50%;
+    translate:-50% 5px;
+    background-color: white;
+    border-radius: 6px;
+    border:1px solid black;
+}
+
+input[type="button"]{
+    margin: 4px 0px;
+    padding:8px;
+    border-radius:8px;
+    min-width:30px;
+    background-color: rgb(183, 194, 234);
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background-color: rgb(34, 47, 99);
+    color:white;
+}
+button{
+    font-family: 'FontAwesome';
+    content:"\f017";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    border-radius:8px;
+    min-width:30px;
+    margin:auto;
+    padding:8px;
+    position:relative;
+    background-color: rgb(183, 194, 234);
+    cursor: pointer;
+    right:-30px;
+    top:-12px;
+}
+
+button:hover{
+    background-color: rgb(34, 47, 99);
+    color:white;
+}
+
+
+#colsrows, #bombsleft{
+    font-size:18px;
+    font-weight:600 ;
+}
+
+#result{
+    font-size:36px;
+    font-weight:600 ;
+}
+
+#winloose{
+    display: none;/*flex;*/
+    float: left;
+    position: absolute;
+    text-align: center;
+    padding:20px 0px;
+    background-color: rgb(255,0,0,0.6);
+    left: 0%;
+    top: 50%;
+    translate: 0% -50%;
+    z-index: 10;
+}
+#winloose-inner{
+    padding:30px 0px;
+    width:610px;
+    background-color: rgb(255,255,0,1);
+}
+
+#winloosePan{
+    font-size: 48px;
+    font-weight: 600;
+    width:610px;
+    text-align: center;
+}
+
+#timer{
+    font-size:58px;
+    font-weight: 600;
+    margin:2px;
+}
+
+svg{
+    display:"none";
+}
+
+svg.vis{
+    display:flex;
+    margin:auto;
+}
